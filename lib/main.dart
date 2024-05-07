@@ -1,3 +1,4 @@
+import 'package:ecommerce_shopping/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -10,6 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: "Ecommerce Shopping App",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Color(0xFFEF6969),
+      ),
+      home: SplashScreen(),
+    );
   }
 }
