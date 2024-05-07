@@ -40,7 +40,7 @@ class _ForgotScreenState extends State<ForgotScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: Dimensions.with10,),
+              SizedBox(height: Dimensions.width10,),
               Text("Please enter your email address. You will receive a link to create ỏ set a new password via email"),
               SizedBox(height: Dimensions.width30,),
               TextFormField(

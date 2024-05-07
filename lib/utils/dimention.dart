@@ -7,13 +7,14 @@ class Dimensions{
 
   //padding;
   static double width2 = screenWidth/390.5;
-  static double with10 = screenWidth/39.27;
-  static double with20 = screenWidth/19.61;
+  static double width10 = screenWidth/39.27;
+  static double width20 = screenWidth/19.61;
   static double height10 = screenHeight/78.1;
   static double height20 = screenHeight/39.05;
   static double height15 = screenHeight/52.07;
   static double width30 = screenHeight/26.03;
-  static double height30 = screenHeight/19.73;
+  static double height30 = screenHeight/26;
+  static double height40 = screenHeight/19.53;
   static double height50 = screenHeight/15.62;
   //liên quan đến font và radius
   static double font10 = screenHeight/78.1;
@@ -33,5 +34,10 @@ class Dimensions{
   static double iconSize16 = screenHeight/52.75;
   //
   static double height200 = screenHeight/3.91;
+  static double height300 = screenHeight/2.6;
+  static double height150 = screenHeight/5.21;
+  static double height260 = screenHeight/3;
+  static double height180 = screenHeight/4.34;
+
 
 }
