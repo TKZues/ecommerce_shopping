@@ -1,7 +1,11 @@
+import 'package:ecommerce_shopping/screens/recovery_screen.dart';
 import 'package:ecommerce_shopping/utils/color.dart';
 import 'package:ecommerce_shopping/utils/dimention.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+import 'otp_screen.dart';
 
 class ForgotScreen extends StatefulWidget {
   const ForgotScreen({Key? key}) : super(key: key);
@@ -25,12 +29,15 @@ class _ForgotScreenState extends State<ForgotScreen> {
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 15),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Forgot Password",
-                style: TextStyle(
-                  fontSize: Dimensions.font26,
-                  fontWeight: FontWeight.w600,
+              Align(
+                alignment: Alignment.topLeft,
+                child: Text("Forgot Password",
+                  style: TextStyle(
+                    fontSize: Dimensions.font26,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
               SizedBox(height: Dimensions.with10,),
@@ -64,18 +71,38 @@ class _ForgotScreenState extends State<ForgotScreen> {
               SizedBox(height: Dimensions.height50,),
               ElevatedButton(
                 onPressed: (){
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(builder: (context) => HomeScreen(),)
-                  // );
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RecoveryScreen(),)
+                  );
                 },
-                child: Text("Login", style: TextStyle(color: Colors.white),),
+                child: Text("Send Code", style: TextStyle(color: Colors.white),),
                 style: ElevatedButton.styleFrom(
                     minimumSize: Size.fromHeight(55),
                     backgroundColor: Color(0xffdb3022),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))
                 ),
               ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(height: Dimensions.height20,),
+                  Text("OR"),
+                  TextButton(onPressed: (){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => OTPScreen(),)
+                    );
+                  }, child: Text("Verify Using Number", style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xffdb3022)
+                  ),
+                  )
+                  )
+
+                ],
+              )
             ],
           ),
         ),
