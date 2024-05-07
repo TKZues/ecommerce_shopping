@@ -61,7 +61,7 @@ class OnboardingScreen extends StatelessWidget {
               child: Text("Let's Shop", style: TextStyle(color: Colors.white),),
               style: ElevatedButton.styleFrom(
                 minimumSize: Size.fromHeight(55),
-                backgroundColor: Color(0xffef6969),
+                backgroundColor: Color(0xffdb3022),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))
               ),
             ),
@@ -75,21 +75,21 @@ class OnboardingScreen extends StatelessWidget {
         "Back",
         style: TextStyle(
           fontWeight: FontWeight.w500,
-          color: Color(0xffef6969)
+          color: Color(0xffdb3022)
         ),
       ),
       next: Text(
         "Next",
         style: TextStyle(
             fontWeight: FontWeight.w500,
-            color: Color(0xffef6969)
+            color: Color(0xffdb3022)
         ),
       ),
 
       dotsDecorator: DotsDecorator(
         size: Size.square(10),
         activeSize: Size(20,10),
-        activeColor: Color(0xffef6969),
+        activeColor: Color(0xffdb3022),
         color: Colors.black26,
         spacing: EdgeInsets.symmetric(horizontal: 3),
         activeShape: RoundedRectangleBorder(

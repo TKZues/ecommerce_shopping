@@ -1,5 +1,7 @@
+import 'package:ecommerce_shopping/screens/login_screen.dart';
 import 'package:ecommerce_shopping/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 
 void  main(){
@@ -11,13 +13,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: "Ecommerce Shopping App",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0xFFEF6969),
       ),
-      home: SplashScreen(),
+      home: LoginScreen(),
+      //flutter emulators --launch Pixel 4 API 30
     );
   }
 }

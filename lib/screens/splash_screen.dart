@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:ecommerce_shopping/screens/onboarding_screen.dart';
+import 'package:ecommerce_shopping/utils/dimention.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -45,7 +46,7 @@ class _splashScreenState extends State<SplashScreen> {
           children: [
             Icon(
               Icons.shopping_cart,
-              size: 200,
+              size: Dimensions.height200,
               color: Color(0xfffa4545),
             ),
             Text("DP SHOP",style: TextStyle(
