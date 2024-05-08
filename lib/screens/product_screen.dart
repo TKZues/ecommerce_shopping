@@ -18,6 +18,14 @@ class ProductScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Product Overview"),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: BackButton(),
+        foregroundColor: Colors.black,
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(

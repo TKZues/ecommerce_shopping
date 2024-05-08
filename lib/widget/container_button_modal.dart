@@ -21,7 +21,7 @@ class ContainerButtonModer extends StatelessWidget {
         child: Text(
           itext,
           style: TextStyle(
-            color: Colors.white70,
+            color: Colors.white,
             fontWeight: FontWeight.bold,
             fontSize: Dimensions.font18
           ),
