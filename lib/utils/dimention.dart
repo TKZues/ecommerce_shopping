@@ -7,6 +7,9 @@ class Dimensions{
 
   //padding;
   static double width2 = screenWidth/390.5;
+  static double width120 = screenWidth/3.27;
+  static double width80 = screenWidth/4.7;
+  static double width100 = screenWidth/3.93;
   static double width10 = screenWidth/39.27;
   static double width20 = screenWidth/19.61;
   static double height10 = screenHeight/78.1;
@@ -16,6 +19,7 @@ class Dimensions{
   static double height30 = screenHeight/26;
   static double height40 = screenHeight/19.53;
   static double height50 = screenHeight/15.62;
+
   //liên quan đến font và radius
   static double font10 = screenHeight/78.1;
   static double font12 = screenHeight/65.08;
@@ -24,6 +28,7 @@ class Dimensions{
   static double font18 = screenHeight/43.39;
   static double font20 = screenHeight/39.05;
   static double font26 = screenHeight/30.04;
+  static double font35 = screenHeight/22.31;
 
   static double radius15 = screenHeight/52.07;
   static double radius20 = screenHeight/42.2;
